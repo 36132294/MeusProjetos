@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de juros 01</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head> 
+<body>
+      
+<div class="contente">
+   
+        <div class="conteiner_01">
+           <h2 class="titulo01">calcular valor de uma obrigação atrasada a ser paga atraves de um boleto bancario.</h2>
+            <div action="valores de entrada">
+                <!--01.Valor do boleto -->
+                    
+                <label for="label valor-boleto" class="label"> 1. Valor original do boleto: </label>
+                <span><input name="valor-boleto" type="text" id="valorBole" class="input_valorbo" placeholder="0,00">
+                       
+                </span><br><br>
+
+                <!--02.Data de vencimento-->
+                <label class="label dataVencimento" for="valor boleto">02.Data do vencimento:</label>
+                <span>
+                    <input id="dataVenc" type="date" placeholder=""
+                    name="data de vencimento" class="input_dataVenc" >
+                </span><br><br>
+
+                <!--Data de Pagamento-->
+                <label class="label dataPagamento" for="valor boleto">03.Data do Pagamento:</label>
+                <span>
+                    <input id="dataPag" type="date" placeholder=""
+                    name="data de pagamanto" class="input_dataPagamento">
+                </span><br><br>
+                
+                <!--valor da multa-->
+                <label class="label valorMulta" for="valor da multa">04.valor da multa:</label>
+                <span>
+                    <input id="valorMul" type="text" placeholder="  0,00"
+                    name="valorDaMulta" class="input_valorMulta" >
+                </span><br><br>
+
+                <!--valor da mora-->
+                <label class="label valorMora" for="valor da mora">05.valor da mora:</label>
+                <span>
+                    <input id="valorMor" type="text" placeholder="  0,00"
+                    name="valorDaMora" class="input_valorMora" >
+                </span><br><br>
+
+               
+                <button>resultado</button>
+            </div>
+            
+        </div>
+        
+    <div class="cont conteiner_02">
+        <div class="conteudo_saida">
+            <h3 class="titulo02">Valor atualizado de um boleto bancário vencido.</h3>
+
+            <p>Valor do boleto --><span class="s" id="vaBoleto">?</span></p><!--valor do boleto-->
+            <p>Valor da multa --> <span class="s" id="vMulta">?</span></p><!--valor da multa-->
+                
+            <p>Valor da mora:<span class="s" id="vMora">?</span>  % por <span class="s" id="diasAtraso">?</span> dias <!--valor da mora mais a quantidade de dias que ta em atraso-->
+            (<span class="s" id="qtd_JurosDias">?</span>%):<span class="s" id="vJ_emDinheiro">?</span>
+            
+            <p>Valor da fatura mais a mora: R$<span class="s" id="valorBoMo">?</span></p><br> 
+            <p>Valor final = valor com mora + valor da multa</p>
+            <p>Valor a ser pago: R$<span class="s" id="valorTotal">?</span></p> 
+        </div>
+           
+    </div>
+
+        <div class="fundo"></div>
+            
+</div>
+<script src="../sistema-soma de juros/index.js"></script>
+</body>
+</html>
