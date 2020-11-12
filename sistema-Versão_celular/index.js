@@ -87,7 +87,7 @@ function fu_jurosDias (){
    dif_tempo = Math.abs(dataPag - dataVenc); //calculo para se obter a diferença de tempo entre duas datas 
    dife_dias = Math.ceil(dif_tempo / umDia);//calculo para se obter a diferença de dias entre duas datas 
    resu_quantidadeJD = parseFloat(dife_dias * valorMor);
-  return resu_quantidadeJD.toFixed(2)
+  return resu_quantidadeJD.toFixed(4)
 }
 
 function fu_vjurosEmDinheiro (){
